@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
+import '../onboarding/onboarding_view.dart';
 import 'app_routes.dart';
 
 
@@ -15,7 +16,7 @@ final router = GoRouter(
       name: AppRoutes.onboard.name,
       builder: (context, state) => const OnboardingView(),
     ),
-    GoRoute(
+    /* GoRoute(
       path: AppRoutes.getStarted.path,
       name: AppRoutes.getStarted.name,
       pageBuilder: (context, state) => const CupertinoPage(
@@ -70,6 +71,6 @@ final router = GoRouter(
       pageBuilder: (context, state) => const CupertinoPage(
         child: HomeView(),
       ),
-    ),
+    ), */
   ],
 );
